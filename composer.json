@@ -1,0 +1,32 @@
+{
+  "name": "andrewHaswell/amazonMWS",
+  "type": "library",
+  "description": "Amazon Marketplace Web Service PHP Client Library",
+  "keywords": [
+    "amazon",
+    "mws",
+    "client",
+    "api",
+    "library"
+  ],
+  "homepage": "https://developer.amazonservices.co.uk",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Andrew Haswell",
+      "email": "andrew.haswell@visualsoft.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=5.2.8",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "include-path": [
+    "src/"
+  ]
+}
