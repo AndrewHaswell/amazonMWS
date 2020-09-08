@@ -24,7 +24,12 @@
   "autoload": {
     "classmap": [
       "src/",
-      "src/MarketplaceWebServiceProducts/Client.php"
+      "src/MarketplaceWebServiceProducts/Client.php",
+      "src/FBAInboundServiceMWS/Client.php",
+      "src/MarketplaceWebService/Client.php",
+      "src/MarketplaceWebServiceOrders/Client.php",
+      "src/MWSMerchantFulfillmentService/Client.php",
+      "src/MWSRecommendationsSectionService/Client.php"
     ]
   },
   "include-path": [
