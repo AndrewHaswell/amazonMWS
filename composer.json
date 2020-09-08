@@ -23,7 +23,8 @@
   },
   "autoload": {
     "classmap": [
-      "src/"
+      "src/",
+      "src/MarketplaceWebServiceProducts/Client.php"
     ]
   },
   "include-path": [
