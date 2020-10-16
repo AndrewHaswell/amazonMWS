@@ -1,14 +1,16 @@
 <?php
 
-class xsd
+namespace AmazonMWS\AmazonXSD\XSD;
+
+class AmazonXSD
 {
 
     /**
      * @return string
      */
-    public function loadAmazonXsd()
+    public function load_amazon_xsd()
     {
-        return 'bob';
+        return dirname(__FILE__);
     }
 
 }
