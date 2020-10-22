@@ -58,9 +58,6 @@ class AmazonXSD
             return [];
         }
 
-        /* Debugging for Andy Haswell (20/10/2020) */ //dump($complex);
-        /* End of Debugging */
-
         $thisNode = [];
 
         if ($element->localName == 'element') {
@@ -107,6 +104,8 @@ class AmazonXSD
 
     /**
      * @param $element
+     *
+     * @return array
      */
 
     public function get_attributes($element)
@@ -119,27 +118,29 @@ class AmazonXSD
     }
 
     /**
-     * @param $element
+     * @param $node
+     *
+     * @return array[]
      */
 
-    public function extract_simpleType($eleement)
+    public function extract_simpleType($node)
     {
-        $options = [];
-        $drestrictions = [];
+        $values_result = [];
+        $restrictions_result = [];
 
-        $optionItems = $this->xpath->evaluate("xsd:restriction/xsd:enumeration", $eleement);
+        $optionItems = $this->xpath->evaluate("xsd:restriction/xsd:enumeration", $node);
 
         foreach ($optionItems as $optionItem) {
             foreach ($optionItem->attributes as $attribute) {
-                $options[] = $attribute->value;
+                $values_result[] = $attribute->value;
             }
         }
 
-        $restrictions = $this->xpath->evaluate("xsd:restriction", $eleement);
+        $restrictions = $this->xpath->evaluate("xsd:restriction", $node);
 
         foreach ($restrictions as $restriction) {
-            $drestriction = $restriction->attributes->item(0);
-            $drestrictions[] = $drestriction->value;
+            $this_restriction = $restriction->attributes->item(0);
+            $restrictions_result[] = $this_restriction->value;
         }
 
         // TODO Any other options, for example
@@ -150,8 +151,8 @@ class AmazonXSD
                 </xsd:simpleType>
         */
         return [
-          'restriction' => $drestrictions,
-          'values'      => $options
+          'restriction' => $restrictions_result,
+          'values'      => $values_result
         ];
     }
 
