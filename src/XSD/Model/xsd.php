@@ -15,12 +15,12 @@ class AmazonXSD
     }
 
     /**
-     * @return string
+     * @param string $title
      */
-    public function load_amazon_xsd()
+    public function load_amazon_xsd($title = 'Product')
     {
         // Get our XSD to parse
-        $xsdstring = file_get_contents(dirname(__FILE__) . '/../Price.xsd');
+        $xsdstring = file_get_contents(dirname(__FILE__) . '/../' . $title . '.xsd');
 
         // Load XSD into DOM
         $this->doc = new \DOMDocument();
@@ -39,21 +39,12 @@ class AmazonXSD
         foreach ($elements as $element) {
             $data = $this->extract_xsd_data_recursive($element);
 
-            /* Debugging for Andy Haswell (20/10/2020) */
-            dump('DEBUG - ' . __NAMESPACE__ . '::' . __FUNCTION__ . '() #' . __LINE__);
-            dd($data);
-            /* End of Debugging */
-
-
             if (!empty($data)) {
                 $result[] = $data;
             }
         }
 
-        /* Debugging for Andy Haswell (20/10/2020) */
-        dump('DEBUG - ' . __NAMESPACE__ . '::' . __FUNCTION__ . '() #' . __LINE__);
-        dd(json_encode($result, JSON_PRETTY_PRINT));
-        /* End of Debugging */
+        return $result;
     }
 
     /**
@@ -67,8 +58,7 @@ class AmazonXSD
             return [];
         }
 
-        /* Debugging for Andy Haswell (20/10/2020) */
-        //dump($complex);
+        /* Debugging for Andy Haswell (20/10/2020) */ //dump($complex);
         /* End of Debugging */
 
         $thisNode = [];
