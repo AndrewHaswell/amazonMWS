@@ -24,12 +24,12 @@
   "autoload": {
     "classmap": [
       "src/",
-      "src/MarketplaceWebServiceProducts/Client.php",
-      "src/FBAInboundServiceMWS/Client.php",
-      "src/MarketplaceWebService/Client.php",
-      "src/MarketplaceWebServiceOrders/Client.php",
-      "src/MWSMerchantFulfillmentService/Client.php",
-      "src/MWSRecommendationsSectionService/Client.php"
+      "src/AmazonMWS/MarketplaceWebServiceProducts/Client.php",
+      "src/AmazonMWS/FBAInboundServiceMWS/Client.php",
+      "src/AmazonMWS/MarketplaceWebService/Client.php",
+      "src/AmazonMWS/MarketplaceWebServiceOrders/Client.php",
+      "src/AmazonMWS/MWSMerchantFulfillmentService/Client.php",
+      "src/AmazonMWS/MWSRecommendationsSectionService/Client.php"
     ]
   },
   "include-path": [
