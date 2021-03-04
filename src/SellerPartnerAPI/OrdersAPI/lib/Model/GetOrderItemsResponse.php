@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * GetOrderItemsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getOrderItems operation.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetOrderItemsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\OrderItemsList',
-        'errors' => '\Swagger\Client\Model\ErrorList'
+        'payload' => '\OrdersApi\Model\OrderItemsList',
+        'errors' => '\OrdersApi\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GetOrderItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\OrderItemsList
+     * @return \OrdersApi\Model\OrderItemsList
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class GetOrderItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\OrderItemsList $payload The payload for the getOrderItems operation.
+     * @param \OrdersApi\Model\OrderItemsList $payload The payload for the getOrderItems operation.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GetOrderItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \OrdersApi\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class GetOrderItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors One or more unexpected errors occurred during the getOrderItems operation.
+     * @param \OrdersApi\Model\ErrorList $errors One or more unexpected errors occurred during the getOrderItems operation.
      *
      * @return $this
      */

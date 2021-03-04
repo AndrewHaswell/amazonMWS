@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace FeedsApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \FeedsApi\ObjectSerializer;
 
 /**
  * CreateFeedSpecification Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
         'feed_type' => 'string',
         'marketplace_ids' => 'string[]',
         'input_feed_document_id' => 'string',
-        'feed_options' => '\Swagger\Client\Model\FeedOptions'
+        'feed_options' => '\FeedsApi\Model\FeedOptions'
     ];
 
     /**
@@ -306,7 +306,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
     /**
      * Gets feed_options
      *
-     * @return \Swagger\Client\Model\FeedOptions
+     * @return \FeedsApi\Model\FeedOptions
      */
     public function getFeedOptions()
     {
@@ -316,7 +316,7 @@ class CreateFeedSpecification implements ModelInterface, ArrayAccess
     /**
      * Sets feed_options
      *
-     * @param \Swagger\Client\Model\FeedOptions $feed_options feed_options
+     * @param \FeedsApi\Model\FeedOptions $feed_options feed_options
      *
      * @return $this
      */

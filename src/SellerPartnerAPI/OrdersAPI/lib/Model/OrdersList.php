@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrdersList Class Doc Comment
  *
  * @category Class
  * @description A list of orders along with additional information to make subsequent API calls.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class OrdersList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'orders' => '\Swagger\Client\Model\OrderList',
+        'orders' => '\OrdersApi\Model\OrderList',
         'next_token' => 'string',
         'last_updated_before' => 'string',
         'created_before' => 'string'
@@ -229,7 +229,7 @@ class OrdersList implements ModelInterface, ArrayAccess
     /**
      * Gets orders
      *
-     * @return \Swagger\Client\Model\OrderList
+     * @return \OrdersApi\Model\OrderList
      */
     public function getOrders()
     {
@@ -239,7 +239,7 @@ class OrdersList implements ModelInterface, ArrayAccess
     /**
      * Sets orders
      *
-     * @param \Swagger\Client\Model\OrderList $orders orders
+     * @param \OrdersApi\Model\OrderList $orders orders
      *
      * @return $this
      */

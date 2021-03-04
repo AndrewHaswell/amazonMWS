@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
  * @description A single order item.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,19 +64,19 @@ class OrderItem implements ModelInterface, ArrayAccess
         'title' => 'string',
         'quantity_ordered' => 'int',
         'quantity_shipped' => 'int',
-        'product_info' => '\Swagger\Client\Model\ProductInfoDetail',
-        'points_granted' => '\Swagger\Client\Model\PointsGrantedDetail',
-        'item_price' => '\Swagger\Client\Model\Money',
-        'shipping_price' => '\Swagger\Client\Model\Money',
-        'item_tax' => '\Swagger\Client\Model\Money',
-        'shipping_tax' => '\Swagger\Client\Model\Money',
-        'shipping_discount' => '\Swagger\Client\Model\Money',
-        'shipping_discount_tax' => '\Swagger\Client\Model\Money',
-        'promotion_discount' => '\Swagger\Client\Model\Money',
-        'promotion_discount_tax' => '\Swagger\Client\Model\Money',
-        'promotion_ids' => '\Swagger\Client\Model\PromotionIdList',
-        'cod_fee' => '\Swagger\Client\Model\Money',
-        'cod_fee_discount' => '\Swagger\Client\Model\Money',
+        'product_info' => '\OrdersApi\Model\ProductInfoDetail',
+        'points_granted' => '\OrdersApi\Model\PointsGrantedDetail',
+        'item_price' => '\OrdersApi\Model\Money',
+        'shipping_price' => '\OrdersApi\Model\Money',
+        'item_tax' => '\OrdersApi\Model\Money',
+        'shipping_tax' => '\OrdersApi\Model\Money',
+        'shipping_discount' => '\OrdersApi\Model\Money',
+        'shipping_discount_tax' => '\OrdersApi\Model\Money',
+        'promotion_discount' => '\OrdersApi\Model\Money',
+        'promotion_discount_tax' => '\OrdersApi\Model\Money',
+        'promotion_ids' => '\OrdersApi\Model\PromotionIdList',
+        'cod_fee' => '\OrdersApi\Model\Money',
+        'cod_fee_discount' => '\OrdersApi\Model\Money',
         'is_gift' => 'bool',
         'condition_note' => 'string',
         'condition_id' => 'string',
@@ -84,7 +84,7 @@ class OrderItem implements ModelInterface, ArrayAccess
         'scheduled_delivery_start_date' => 'string',
         'scheduled_delivery_end_date' => 'string',
         'price_designation' => 'string',
-        'tax_collection' => '\Swagger\Client\Model\TaxCollection',
+        'tax_collection' => '\OrdersApi\Model\TaxCollection',
         'serial_number_required' => 'bool',
         'is_transparency' => 'bool',
         'ioss_number' => 'string',
@@ -564,7 +564,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets product_info
      *
-     * @return \Swagger\Client\Model\ProductInfoDetail
+     * @return \OrdersApi\Model\ProductInfoDetail
      */
     public function getProductInfo()
     {
@@ -574,7 +574,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets product_info
      *
-     * @param \Swagger\Client\Model\ProductInfoDetail $product_info Product information for the item.
+     * @param \OrdersApi\Model\ProductInfoDetail $product_info Product information for the item.
      *
      * @return $this
      */
@@ -588,7 +588,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets points_granted
      *
-     * @return \Swagger\Client\Model\PointsGrantedDetail
+     * @return \OrdersApi\Model\PointsGrantedDetail
      */
     public function getPointsGranted()
     {
@@ -598,7 +598,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets points_granted
      *
-     * @param \Swagger\Client\Model\PointsGrantedDetail $points_granted The number and value of Amazon Points granted with the purchase of an item.
+     * @param \OrdersApi\Model\PointsGrantedDetail $points_granted The number and value of Amazon Points granted with the purchase of an item.
      *
      * @return $this
      */
@@ -612,7 +612,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets item_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getItemPrice()
     {
@@ -622,7 +622,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets item_price
      *
-     * @param \Swagger\Client\Model\Money $item_price The selling price of the order item. Note that an order item is an item and a quantity. This means that the value of ItemPrice is equal to the selling price of the item multiplied by the quantity ordered. Note that ItemPrice excludes ShippingPrice and GiftWrapPrice.
+     * @param \OrdersApi\Model\Money $item_price The selling price of the order item. Note that an order item is an item and a quantity. This means that the value of ItemPrice is equal to the selling price of the item multiplied by the quantity ordered. Note that ItemPrice excludes ShippingPrice and GiftWrapPrice.
      *
      * @return $this
      */
@@ -636,7 +636,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getShippingPrice()
     {
@@ -646,7 +646,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_price
      *
-     * @param \Swagger\Client\Model\Money $shipping_price The shipping price of the item.
+     * @param \OrdersApi\Model\Money $shipping_price The shipping price of the item.
      *
      * @return $this
      */
@@ -660,7 +660,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets item_tax
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getItemTax()
     {
@@ -670,7 +670,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets item_tax
      *
-     * @param \Swagger\Client\Model\Money $item_tax The tax on the item price.
+     * @param \OrdersApi\Model\Money $item_tax The tax on the item price.
      *
      * @return $this
      */
@@ -684,7 +684,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_tax
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getShippingTax()
     {
@@ -694,7 +694,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_tax
      *
-     * @param \Swagger\Client\Model\Money $shipping_tax The tax on the shipping price.
+     * @param \OrdersApi\Model\Money $shipping_tax The tax on the shipping price.
      *
      * @return $this
      */
@@ -708,7 +708,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_discount
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getShippingDiscount()
     {
@@ -718,7 +718,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_discount
      *
-     * @param \Swagger\Client\Model\Money $shipping_discount The discount on the shipping price.
+     * @param \OrdersApi\Model\Money $shipping_discount The discount on the shipping price.
      *
      * @return $this
      */
@@ -732,7 +732,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_discount_tax
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getShippingDiscountTax()
     {
@@ -742,7 +742,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_discount_tax
      *
-     * @param \Swagger\Client\Model\Money $shipping_discount_tax The tax on the discount on the shipping price.
+     * @param \OrdersApi\Model\Money $shipping_discount_tax The tax on the discount on the shipping price.
      *
      * @return $this
      */
@@ -756,7 +756,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets promotion_discount
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getPromotionDiscount()
     {
@@ -766,7 +766,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets promotion_discount
      *
-     * @param \Swagger\Client\Model\Money $promotion_discount The total of all promotional discounts in the offer.
+     * @param \OrdersApi\Model\Money $promotion_discount The total of all promotional discounts in the offer.
      *
      * @return $this
      */
@@ -780,7 +780,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets promotion_discount_tax
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getPromotionDiscountTax()
     {
@@ -790,7 +790,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets promotion_discount_tax
      *
-     * @param \Swagger\Client\Model\Money $promotion_discount_tax The tax on the total of all promotional discounts in the offer.
+     * @param \OrdersApi\Model\Money $promotion_discount_tax The tax on the total of all promotional discounts in the offer.
      *
      * @return $this
      */
@@ -804,7 +804,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets promotion_ids
      *
-     * @return \Swagger\Client\Model\PromotionIdList
+     * @return \OrdersApi\Model\PromotionIdList
      */
     public function getPromotionIds()
     {
@@ -814,7 +814,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets promotion_ids
      *
-     * @param \Swagger\Client\Model\PromotionIdList $promotion_ids promotion_ids
+     * @param \OrdersApi\Model\PromotionIdList $promotion_ids promotion_ids
      *
      * @return $this
      */
@@ -828,7 +828,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets cod_fee
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getCodFee()
     {
@@ -838,7 +838,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets cod_fee
      *
-     * @param \Swagger\Client\Model\Money $cod_fee The fee charged for COD service.
+     * @param \OrdersApi\Model\Money $cod_fee The fee charged for COD service.
      *
      * @return $this
      */
@@ -852,7 +852,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets cod_fee_discount
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getCodFeeDiscount()
     {
@@ -862,7 +862,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets cod_fee_discount
      *
-     * @param \Swagger\Client\Model\Money $cod_fee_discount The discount on the COD fee.
+     * @param \OrdersApi\Model\Money $cod_fee_discount The discount on the COD fee.
      *
      * @return $this
      */
@@ -1044,7 +1044,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Gets tax_collection
      *
-     * @return \Swagger\Client\Model\TaxCollection
+     * @return \OrdersApi\Model\TaxCollection
      */
     public function getTaxCollection()
     {
@@ -1054,7 +1054,7 @@ class OrderItem implements ModelInterface, ArrayAccess
     /**
      * Sets tax_collection
      *
-     * @param \Swagger\Client\Model\TaxCollection $tax_collection Information about withheld taxes.
+     * @param \OrdersApi\Model\TaxCollection $tax_collection Information about withheld taxes.
      *
      * @return $this
      */

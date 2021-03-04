@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace FeedsApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \FeedsApi\ObjectSerializer;
 
 /**
  * CreateFeedDocumentResponse Class Doc Comment
  *
  * @category Class
  * @description The response for the createFeedDocument operation.
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class CreateFeedDocumentResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\CreateFeedDocumentResult',
-        'errors' => '\Swagger\Client\Model\ErrorList'
+        'payload' => '\FeedsApi\Model\CreateFeedDocumentResult',
+        'errors' => '\FeedsApi\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class CreateFeedDocumentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\CreateFeedDocumentResult
+     * @return \FeedsApi\Model\CreateFeedDocumentResult
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class CreateFeedDocumentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\CreateFeedDocumentResult $payload payload
+     * @param \FeedsApi\Model\CreateFeedDocumentResult $payload payload
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class CreateFeedDocumentResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \FeedsApi\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class CreateFeedDocumentResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors errors
+     * @param \FeedsApi\Model\ErrorList $errors errors
      *
      * @return $this
      */

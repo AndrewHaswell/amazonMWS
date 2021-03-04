@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace FeedsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use FeedsApi\ApiException;
+use FeedsApi\Configuration;
+use FeedsApi\HeaderSelector;
+use FeedsApi\ObjectSerializer;
 
 /**
  * FeedsApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class FeedsApi
      *
      * @param  string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CancelFeedResponse
+     * @return \FeedsApi\Model\CancelFeedResponse
      */
     public function cancelFeed($feed_id)
     {
@@ -107,13 +107,13 @@ class FeedsApi
      *
      * @param  string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CancelFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\CancelFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelFeedWithHttpInfo($feed_id)
     {
-        $returnType = '\Swagger\Client\Model\CancelFeedResponse';
+        $returnType = '\FeedsApi\Model\CancelFeedResponse';
         $request = $this->cancelFeedRequest($feed_id);
 
         try {
@@ -165,7 +165,7 @@ class FeedsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class FeedsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -197,7 +197,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -205,7 +205,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CancelFeedResponse',
+                        '\FeedsApi\Model\CancelFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class FeedsApi
      */
     public function cancelFeedAsyncWithHttpInfo($feed_id)
     {
-        $returnType = '\Swagger\Client\Model\CancelFeedResponse';
+        $returnType = '\FeedsApi\Model\CancelFeedResponse';
         $request = $this->cancelFeedRequest($feed_id);
 
         return $this->client
@@ -419,11 +419,11 @@ class FeedsApi
     /**
      * Operation createFeed
      *
-     * @param  \Swagger\Client\Model\CreateFeedSpecification $body body (required)
+     * @param  \FeedsApi\Model\CreateFeedSpecification $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CreateFeedResponse
+     * @return \FeedsApi\Model\CreateFeedResponse
      */
     public function createFeed($body)
     {
@@ -434,15 +434,15 @@ class FeedsApi
     /**
      * Operation createFeedWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\CreateFeedSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedSpecification $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CreateFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\CreateFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFeedWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateFeedResponse';
+        $returnType = '\FeedsApi\Model\CreateFeedResponse';
         $request = $this->createFeedRequest($body);
 
         try {
@@ -494,7 +494,7 @@ class FeedsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class FeedsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -534,7 +534,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -550,7 +550,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -558,7 +558,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedResponse',
+                        '\FeedsApi\Model\CreateFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -573,7 +573,7 @@ class FeedsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateFeedSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -593,14 +593,14 @@ class FeedsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateFeedSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createFeedAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateFeedResponse';
+        $returnType = '\FeedsApi\Model\CreateFeedResponse';
         $request = $this->createFeedRequest($body);
 
         return $this->client
@@ -643,7 +643,7 @@ class FeedsApi
     /**
      * Create request for operation 'createFeed'
      *
-     * @param  \Swagger\Client\Model\CreateFeedSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -743,11 +743,11 @@ class FeedsApi
     /**
      * Operation createFeedDocument
      *
-     * @param  \Swagger\Client\Model\CreateFeedDocumentSpecification $body body (required)
+     * @param  \FeedsApi\Model\CreateFeedDocumentSpecification $body body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\CreateFeedDocumentResponse
+     * @return \FeedsApi\Model\CreateFeedDocumentResponse
      */
     public function createFeedDocument($body)
     {
@@ -758,15 +758,15 @@ class FeedsApi
     /**
      * Operation createFeedDocumentWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\CreateFeedDocumentSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedDocumentSpecification $body (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\CreateFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\CreateFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFeedDocumentWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateFeedDocumentResponse';
+        $returnType = '\FeedsApi\Model\CreateFeedDocumentResponse';
         $request = $this->createFeedDocumentRequest($body);
 
         try {
@@ -818,7 +818,7 @@ class FeedsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -826,7 +826,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -834,7 +834,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -842,7 +842,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -850,7 +850,7 @@ class FeedsApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -858,7 +858,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -874,7 +874,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -882,7 +882,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\CreateFeedDocumentResponse',
+                        '\FeedsApi\Model\CreateFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -897,7 +897,7 @@ class FeedsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateFeedDocumentSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -917,14 +917,14 @@ class FeedsApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\CreateFeedDocumentSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createFeedDocumentAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\CreateFeedDocumentResponse';
+        $returnType = '\FeedsApi\Model\CreateFeedDocumentResponse';
         $request = $this->createFeedDocumentRequest($body);
 
         return $this->client
@@ -967,7 +967,7 @@ class FeedsApi
     /**
      * Create request for operation 'createFeedDocument'
      *
-     * @param  \Swagger\Client\Model\CreateFeedDocumentSpecification $body (required)
+     * @param  \FeedsApi\Model\CreateFeedDocumentSpecification $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1069,9 +1069,9 @@ class FeedsApi
      *
      * @param  string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFeedResponse
+     * @return \FeedsApi\Model\GetFeedResponse
      */
     public function getFeed($feed_id)
     {
@@ -1084,13 +1084,13 @@ class FeedsApi
      *
      * @param  string $feed_id The identifier for the feed. This identifier is unique only in combination with a seller ID. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFeedResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\GetFeedResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedWithHttpInfo($feed_id)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedResponse';
+        $returnType = '\FeedsApi\Model\GetFeedResponse';
         $request = $this->getFeedRequest($feed_id);
 
         try {
@@ -1142,7 +1142,7 @@ class FeedsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1150,7 +1150,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1158,7 +1158,7 @@ class FeedsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1166,7 +1166,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1182,7 +1182,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1190,7 +1190,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1206,7 +1206,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedResponse',
+                        '\FeedsApi\Model\GetFeedResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1248,7 +1248,7 @@ class FeedsApi
      */
     public function getFeedAsyncWithHttpInfo($feed_id)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedResponse';
+        $returnType = '\FeedsApi\Model\GetFeedResponse';
         $request = $this->getFeedRequest($feed_id);
 
         return $this->client
@@ -1398,9 +1398,9 @@ class FeedsApi
      *
      * @param  string $feed_document_id The identifier of the feed document. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFeedDocumentResponse
+     * @return \FeedsApi\Model\GetFeedDocumentResponse
      */
     public function getFeedDocument($feed_document_id)
     {
@@ -1413,13 +1413,13 @@ class FeedsApi
      *
      * @param  string $feed_document_id The identifier of the feed document. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\GetFeedDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedDocumentWithHttpInfo($feed_document_id)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedDocumentResponse';
+        $returnType = '\FeedsApi\Model\GetFeedDocumentResponse';
         $request = $this->getFeedDocumentRequest($feed_document_id);
 
         try {
@@ -1471,7 +1471,7 @@ class FeedsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1479,7 +1479,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1487,7 +1487,7 @@ class FeedsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1495,7 +1495,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1503,7 +1503,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1519,7 +1519,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1527,7 +1527,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1535,7 +1535,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedDocumentResponse',
+                        '\FeedsApi\Model\GetFeedDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1577,7 +1577,7 @@ class FeedsApi
      */
     public function getFeedDocumentAsyncWithHttpInfo($feed_document_id)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedDocumentResponse';
+        $returnType = '\FeedsApi\Model\GetFeedDocumentResponse';
         $request = $this->getFeedDocumentRequest($feed_document_id);
 
         return $this->client
@@ -1733,9 +1733,9 @@ class FeedsApi
      * @param  \DateTime $created_until The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetFeedsResponse
+     * @return \FeedsApi\Model\GetFeedsResponse
      */
     public function getFeeds($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
@@ -1754,13 +1754,13 @@ class FeedsApi
      * @param  \DateTime $created_until The latest feed creation date and time for feeds included in the response, in ISO 8601 format. The default is now. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \FeedsApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetFeedsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FeedsApi\Model\GetFeedsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedsWithHttpInfo($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedsResponse';
+        $returnType = '\FeedsApi\Model\GetFeedsResponse';
         $request = $this->getFeedsRequest($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token);
 
         try {
@@ -1812,7 +1812,7 @@ class FeedsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1820,7 +1820,7 @@ class FeedsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1828,7 +1828,7 @@ class FeedsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1836,7 +1836,7 @@ class FeedsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1844,7 +1844,7 @@ class FeedsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1852,7 +1852,7 @@ class FeedsApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1860,7 +1860,7 @@ class FeedsApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1868,7 +1868,7 @@ class FeedsApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1876,7 +1876,7 @@ class FeedsApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetFeedsResponse',
+                        '\FeedsApi\Model\GetFeedsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1930,7 +1930,7 @@ class FeedsApi
      */
     public function getFeedsAsyncWithHttpInfo($feed_types = null, $marketplace_ids = null, $page_size = '10', $processing_statuses = null, $created_since = null, $created_until = null, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetFeedsResponse';
+        $returnType = '\FeedsApi\Model\GetFeedsResponse';
         $request = $this->getFeedsRequest($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token);
 
         return $this->client

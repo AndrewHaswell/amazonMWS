@@ -12,12 +12,12 @@ Name | Type | Description | Notes
 **sales_channel** | **string** | The sales channel of the first item in the order. | [optional] 
 **order_channel** | **string** | The order channel of the first item in the order. | [optional] 
 **ship_service_level** | **string** | The shipment service level of the order. | [optional] 
-**order_total** | [**\Swagger\Client\Model\Money**](Money.md) | The total charge for this order. | [optional] 
+**order_total** | [**\OrdersApi\Model\Money**](Money.md) | The total charge for this order. | [optional] 
 **number_of_items_shipped** | **int** | The number of items shipped. | [optional] 
 **number_of_items_unshipped** | **int** | The number of items unshipped. | [optional] 
-**payment_execution_detail** | [**\Swagger\Client\Model\PaymentExecutionDetailItemList**](PaymentExecutionDetailItemList.md) | Information about sub-payment methods for a Cash On Delivery (COD) order.  Note: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod &#x3D; COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned. | [optional] 
+**payment_execution_detail** | [**\OrdersApi\Model\PaymentExecutionDetailItemList**](PaymentExecutionDetailItemList.md) | Information about sub-payment methods for a Cash On Delivery (COD) order.  Note: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod &#x3D; COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned. | [optional] 
 **payment_method** | **string** | The payment method for the order. This property is limited to Cash On Delivery (COD) and Convenience Store (CVS) payment methods. Unless you need the specific COD payment information provided by the PaymentExecutionDetailItem object, we recommend using the PaymentMethodDetails property to get payment method information. | [optional] 
-**payment_method_details** | [**\Swagger\Client\Model\PaymentMethodDetailItemList**](PaymentMethodDetailItemList.md) | A list of payment methods for the order. | [optional] 
+**payment_method_details** | [**\OrdersApi\Model\PaymentMethodDetailItemList**](PaymentMethodDetailItemList.md) | A list of payment methods for the order. | [optional] 
 **marketplace_id** | **string** | The identifier for the marketplace where the order was placed. | [optional] 
 **shipment_service_level_category** | **string** | The shipment service level category of the order.  Possible values: Expedited, FreeEconomy, NextDay, SameDay, SecondDay, Scheduled, Standard. | [optional] 
 **easy_ship_shipment_status** | **string** | The status of the Amazon Easy Ship order. This property is included only for Amazon Easy Ship orders.  Possible values: PendingPickUp, LabelCanceled, PickedUp, OutForDelivery, Damaged, Delivered, RejectedByBuyer, Undeliverable, ReturnedToSeller, ReturningToSeller. | [optional] 
@@ -36,8 +36,8 @@ Name | Type | Description | Notes
 **promise_response_due_date** | **string** | Indicates the date by which the seller must respond to the buyer with an estimated ship date. Returned only for Sourcing on Demand orders. | [optional] 
 **is_estimated_ship_date_set** | **bool** | When true, the estimated ship date is set for the order. Returned only for Sourcing on Demand orders. | [optional] 
 **is_sold_by_ab** | **bool** | When true, the item within this order was bought and re-sold by Amazon Business EU SARL (ABEU). By buying and instantly re-selling your items, ABEU becomes the seller of record, making your inventory available for sale to customers who would not otherwise purchase from a third-party seller. | [optional] 
-**assigned_ship_from_location_address** | [**\Swagger\Client\Model\Address**](Address.md) | The recommended location for the seller to ship the items from. It is calculated at checkout. The seller may or may not choose to ship from this location. | [optional] 
-**fulfillment_instruction** | [**\Swagger\Client\Model\FulfillmentInstruction**](FulfillmentInstruction.md) | Contains the instructions about the fulfillment like where should it be fulfilled from. | [optional] 
+**assigned_ship_from_location_address** | [**\OrdersApi\Model\Address**](Address.md) | The recommended location for the seller to ship the items from. It is calculated at checkout. The seller may or may not choose to ship from this location. | [optional] 
+**fulfillment_instruction** | [**\OrdersApi\Model\FulfillmentInstruction**](FulfillmentInstruction.md) | Contains the instructions about the fulfillment like where should it be fulfilled from. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

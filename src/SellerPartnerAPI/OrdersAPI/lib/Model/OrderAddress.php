@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrderAddress Class Doc Comment
  *
  * @category Class
  * @description The shipping address for the order.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class OrderAddress implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'amazon_order_id' => 'string',
-        'shipping_address' => '\Swagger\Client\Model\Address'
+        'shipping_address' => '\OrdersApi\Model\Address'
     ];
 
     /**
@@ -241,7 +241,7 @@ class OrderAddress implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \OrdersApi\Model\Address
      */
     public function getShippingAddress()
     {
@@ -251,7 +251,7 @@ class OrderAddress implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Swagger\Client\Model\Address $shipping_address shipping_address
+     * @param \OrdersApi\Model\Address $shipping_address shipping_address
      *
      * @return $this
      */

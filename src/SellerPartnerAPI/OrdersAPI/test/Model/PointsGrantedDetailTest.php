@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace OrdersApi;
 
 /**
  * PointsGrantedDetailTest Class Doc Comment
  *
  * @category    Class
  * @description The number of Amazon Points offered with the purchase of an item, and their monetary value.
- * @package     Swagger\Client
+ * @package     OrdersApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
