@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace FeedsApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \FeedsApi\ObjectSerializer;
 
 /**
  * CreateFeedDocumentResult Class Doc Comment
  *
  * @category Class
  * @description Information required to encrypt and upload a feed document&#39;s contents.
- * @package  Swagger\Client
+ * @package  FeedsApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class CreateFeedDocumentResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'feed_document_id' => 'string',
         'url' => 'string',
-        'encryption_details' => '\Swagger\Client\Model\FeedDocumentEncryptionDetails'
+        'encryption_details' => '\FeedsApi\Model\FeedDocumentEncryptionDetails'
     ];
 
     /**
@@ -277,7 +277,7 @@ class CreateFeedDocumentResult implements ModelInterface, ArrayAccess
     /**
      * Gets encryption_details
      *
-     * @return \Swagger\Client\Model\FeedDocumentEncryptionDetails
+     * @return \FeedsApi\Model\FeedDocumentEncryptionDetails
      */
     public function getEncryptionDetails()
     {
@@ -287,7 +287,7 @@ class CreateFeedDocumentResult implements ModelInterface, ArrayAccess
     /**
      * Sets encryption_details
      *
-     * @param \Swagger\Client\Model\FeedDocumentEncryptionDetails $encryption_details encryption_details
+     * @param \FeedsApi\Model\FeedDocumentEncryptionDetails $encryption_details encryption_details
      *
      * @return $this
      */

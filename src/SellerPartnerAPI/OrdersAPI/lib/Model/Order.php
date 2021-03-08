@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
  * @description Order information.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,12 +67,12 @@ class Order implements ModelInterface, ArrayAccess
         'sales_channel' => 'string',
         'order_channel' => 'string',
         'ship_service_level' => 'string',
-        'order_total' => '\Swagger\Client\Model\Money',
+        'order_total' => '\OrdersApi\Model\Money',
         'number_of_items_shipped' => 'int',
         'number_of_items_unshipped' => 'int',
-        'payment_execution_detail' => '\Swagger\Client\Model\PaymentExecutionDetailItemList',
+        'payment_execution_detail' => '\OrdersApi\Model\PaymentExecutionDetailItemList',
         'payment_method' => 'string',
-        'payment_method_details' => '\Swagger\Client\Model\PaymentMethodDetailItemList',
+        'payment_method_details' => '\OrdersApi\Model\PaymentMethodDetailItemList',
         'marketplace_id' => 'string',
         'shipment_service_level_category' => 'string',
         'easy_ship_shipment_status' => 'string',
@@ -91,8 +91,8 @@ class Order implements ModelInterface, ArrayAccess
         'promise_response_due_date' => 'string',
         'is_estimated_ship_date_set' => 'bool',
         'is_sold_by_ab' => 'bool',
-        'assigned_ship_from_location_address' => '\Swagger\Client\Model\Address',
-        'fulfillment_instruction' => '\Swagger\Client\Model\FulfillmentInstruction'
+        'assigned_ship_from_location_address' => '\OrdersApi\Model\Address',
+        'fulfillment_instruction' => '\OrdersApi\Model\FulfillmentInstruction'
     ];
 
     /**
@@ -770,7 +770,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets order_total
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getOrderTotal()
     {
@@ -780,7 +780,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets order_total
      *
-     * @param \Swagger\Client\Model\Money $order_total The total charge for this order.
+     * @param \OrdersApi\Model\Money $order_total The total charge for this order.
      *
      * @return $this
      */
@@ -842,7 +842,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets payment_execution_detail
      *
-     * @return \Swagger\Client\Model\PaymentExecutionDetailItemList
+     * @return \OrdersApi\Model\PaymentExecutionDetailItemList
      */
     public function getPaymentExecutionDetail()
     {
@@ -852,7 +852,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets payment_execution_detail
      *
-     * @param \Swagger\Client\Model\PaymentExecutionDetailItemList $payment_execution_detail Information about sub-payment methods for a Cash On Delivery (COD) order.  Note: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod = COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned.
+     * @param \OrdersApi\Model\PaymentExecutionDetailItemList $payment_execution_detail Information about sub-payment methods for a Cash On Delivery (COD) order.  Note: For a COD order that is paid for using one sub-payment method, one PaymentExecutionDetailItem object is returned, with PaymentExecutionDetailItem/PaymentMethod = COD. For a COD order that is paid for using multiple sub-payment methods, two or more PaymentExecutionDetailItem objects are returned.
      *
      * @return $this
      */
@@ -899,7 +899,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method_details
      *
-     * @return \Swagger\Client\Model\PaymentMethodDetailItemList
+     * @return \OrdersApi\Model\PaymentMethodDetailItemList
      */
     public function getPaymentMethodDetails()
     {
@@ -909,7 +909,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method_details
      *
-     * @param \Swagger\Client\Model\PaymentMethodDetailItemList $payment_method_details A list of payment methods for the order.
+     * @param \OrdersApi\Model\PaymentMethodDetailItemList $payment_method_details A list of payment methods for the order.
      *
      * @return $this
      */
@@ -1364,7 +1364,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets assigned_ship_from_location_address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \OrdersApi\Model\Address
      */
     public function getAssignedShipFromLocationAddress()
     {
@@ -1374,7 +1374,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets assigned_ship_from_location_address
      *
-     * @param \Swagger\Client\Model\Address $assigned_ship_from_location_address The recommended location for the seller to ship the items from. It is calculated at checkout. The seller may or may not choose to ship from this location.
+     * @param \OrdersApi\Model\Address $assigned_ship_from_location_address The recommended location for the seller to ship the items from. It is calculated at checkout. The seller may or may not choose to ship from this location.
      *
      * @return $this
      */
@@ -1388,7 +1388,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets fulfillment_instruction
      *
-     * @return \Swagger\Client\Model\FulfillmentInstruction
+     * @return \OrdersApi\Model\FulfillmentInstruction
      */
     public function getFulfillmentInstruction()
     {
@@ -1398,7 +1398,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets fulfillment_instruction
      *
-     * @param \Swagger\Client\Model\FulfillmentInstruction $fulfillment_instruction Contains the instructions about the fulfillment like where should it be fulfilled from.
+     * @param \OrdersApi\Model\FulfillmentInstruction $fulfillment_instruction Contains the instructions about the fulfillment like where should it be fulfilled from.
      *
      * @return $this
      */

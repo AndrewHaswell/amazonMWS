@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * PointsGrantedDetail Class Doc Comment
  *
  * @category Class
  * @description The number of Amazon Points offered with the purchase of an item, and their monetary value.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'points_number' => 'int',
-        'points_monetary_value' => '\Swagger\Client\Model\Money'
+        'points_monetary_value' => '\OrdersApi\Model\Money'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
     /**
      * Gets points_monetary_value
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getPointsMonetaryValue()
     {
@@ -248,7 +248,7 @@ class PointsGrantedDetail implements ModelInterface, ArrayAccess
     /**
      * Sets points_monetary_value
      *
-     * @param \Swagger\Client\Model\Money $points_monetary_value The monetary value of the Amazon Points granted.
+     * @param \OrdersApi\Model\Money $points_monetary_value The monetary value of the Amazon Points granted.
      *
      * @return $this
      */

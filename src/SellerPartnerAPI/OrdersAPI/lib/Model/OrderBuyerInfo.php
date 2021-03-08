@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrderBuyerInfo Class Doc Comment
  *
  * @category Class
  * @description Buyer information for an order.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class OrderBuyerInfo implements ModelInterface, ArrayAccess
         'buyer_email' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
-        'buyer_tax_info' => '\Swagger\Client\Model\BuyerTaxInfo',
+        'buyer_tax_info' => '\OrdersApi\Model\BuyerTaxInfo',
         'purchase_order_number' => 'string'
     ];
 
@@ -337,7 +337,7 @@ class OrderBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Gets buyer_tax_info
      *
-     * @return \Swagger\Client\Model\BuyerTaxInfo
+     * @return \OrdersApi\Model\BuyerTaxInfo
      */
     public function getBuyerTaxInfo()
     {
@@ -347,7 +347,7 @@ class OrderBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Sets buyer_tax_info
      *
-     * @param \Swagger\Client\Model\BuyerTaxInfo $buyer_tax_info Tax information about the buyer.
+     * @param \OrdersApi\Model\BuyerTaxInfo $buyer_tax_info Tax information about the buyer.
      *
      * @return $this
      */

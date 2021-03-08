@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * GetOrderBuyerInfoResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getOrderBuyerInfo operation.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GetOrderBuyerInfoResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payload' => '\Swagger\Client\Model\OrderBuyerInfo',
-        'errors' => '\Swagger\Client\Model\ErrorList'
+        'payload' => '\OrdersApi\Model\OrderBuyerInfo',
+        'errors' => '\OrdersApi\Model\ErrorList'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GetOrderBuyerInfoResponse implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \Swagger\Client\Model\OrderBuyerInfo
+     * @return \OrdersApi\Model\OrderBuyerInfo
      */
     public function getPayload()
     {
@@ -224,7 +224,7 @@ class GetOrderBuyerInfoResponse implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \Swagger\Client\Model\OrderBuyerInfo $payload The payload for the getOrderBuyerInfo operations.
+     * @param \OrdersApi\Model\OrderBuyerInfo $payload The payload for the getOrderBuyerInfo operations.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GetOrderBuyerInfoResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ErrorList
+     * @return \OrdersApi\Model\ErrorList
      */
     public function getErrors()
     {
@@ -248,7 +248,7 @@ class GetOrderBuyerInfoResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ErrorList $errors One or more unexpected errors occurred during the getOrderBuyerInfo operation.
+     * @param \OrdersApi\Model\ErrorList $errors One or more unexpected errors occurred during the getOrderBuyerInfo operation.
      *
      * @return $this
      */

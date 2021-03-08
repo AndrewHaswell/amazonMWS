@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace OrdersApi;
 
 /**
  * BuyerTaxInfoTest Class Doc Comment
  *
  * @category    Class
  * @description Tax information about the buyer.
- * @package     Swagger\Client
+ * @package     OrdersApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

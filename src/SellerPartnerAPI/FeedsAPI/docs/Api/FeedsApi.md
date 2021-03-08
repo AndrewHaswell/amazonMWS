@@ -1,4 +1,4 @@
-# Swagger\Client\FeedsApi
+# FeedsApi\FeedsApi
 
 All URIs are relative to *https://sellingpartnerapi-na.amazon.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **cancelFeed**
-> \Swagger\Client\Model\CancelFeedResponse cancelFeed($feed_id)
+> \FeedsApi\Model\CancelFeedResponse cancelFeed($feed_id)
 
 
 
@@ -24,7 +24,7 @@ Cancels the feed that you specify. Only feeds with processingStatus=IN_QUEUE can
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\CancelFeedResponse**](../Model/CancelFeedResponse.md)
+[**\FeedsApi\Model\CancelFeedResponse**](../Model/CancelFeedResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createFeed**
-> \Swagger\Client\Model\CreateFeedResponse createFeed($body)
+> \FeedsApi\Model\CreateFeedResponse createFeed($body)
 
 
 
@@ -73,12 +73,12 @@ Creates a feed. Encrypt and upload the contents of the feed document before call
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateFeedSpecification(); // \Swagger\Client\Model\CreateFeedSpecification | 
+$body = new \FeedsApi\Model\CreateFeedSpecification(); // \FeedsApi\Model\CreateFeedSpecification | 
 
 try {
     $result = $apiInstance->createFeed($body);
@@ -93,11 +93,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateFeedSpecification**](../Model/CreateFeedSpecification.md)|  |
+ **body** | [**\FeedsApi\Model\CreateFeedSpecification**](../Model/CreateFeedSpecification.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CreateFeedResponse**](../Model/CreateFeedResponse.md)
+[**\FeedsApi\Model\CreateFeedResponse**](../Model/CreateFeedResponse.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createFeedDocument**
-> \Swagger\Client\Model\CreateFeedDocumentResponse createFeedDocument($body)
+> \FeedsApi\Model\CreateFeedDocumentResponse createFeedDocument($body)
 
 
 
@@ -122,12 +122,12 @@ Creates a feed document for the feed type that you specify. This operation retur
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateFeedDocumentSpecification(); // \Swagger\Client\Model\CreateFeedDocumentSpecification | 
+$body = new \FeedsApi\Model\CreateFeedDocumentSpecification(); // \FeedsApi\Model\CreateFeedDocumentSpecification | 
 
 try {
     $result = $apiInstance->createFeedDocument($body);
@@ -142,11 +142,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateFeedDocumentSpecification**](../Model/CreateFeedDocumentSpecification.md)|  |
+ **body** | [**\FeedsApi\Model\CreateFeedDocumentSpecification**](../Model/CreateFeedDocumentSpecification.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\CreateFeedDocumentResponse**](../Model/CreateFeedDocumentResponse.md)
+[**\FeedsApi\Model\CreateFeedDocumentResponse**](../Model/CreateFeedDocumentResponse.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFeed**
-> \Swagger\Client\Model\GetFeedResponse getFeed($feed_id)
+> \FeedsApi\Model\GetFeedResponse getFeed($feed_id)
 
 
 
@@ -171,7 +171,7 @@ Returns feed details (including the resultDocumentId, if available) for the feed
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetFeedResponse**](../Model/GetFeedResponse.md)
+[**\FeedsApi\Model\GetFeedResponse**](../Model/GetFeedResponse.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFeedDocument**
-> \Swagger\Client\Model\GetFeedDocumentResponse getFeedDocument($feed_document_id)
+> \FeedsApi\Model\GetFeedDocumentResponse getFeedDocument($feed_document_id)
 
 
 
@@ -220,7 +220,7 @@ Returns the information required for retrieving a feed document's contents. This
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetFeedDocumentResponse**](../Model/GetFeedDocumentResponse.md)
+[**\FeedsApi\Model\GetFeedDocumentResponse**](../Model/GetFeedDocumentResponse.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFeeds**
-> \Swagger\Client\Model\GetFeedsResponse getFeeds($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token)
+> \FeedsApi\Model\GetFeedsResponse getFeeds($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token)
 
 
 
@@ -269,7 +269,7 @@ Returns feed details for the feeds that match the filters that you specify.  **U
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FeedsApi(
+$apiInstance = new FeedsApi\Api\FeedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetFeedsResponse**](../Model/GetFeedsResponse.md)
+[**\FeedsApi\Model\GetFeedsResponse**](../Model/GetFeedsResponse.md)
 
 ### Authorization
 

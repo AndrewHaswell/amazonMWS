@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrderItemBuyerInfo Class Doc Comment
  *
  * @category Class
  * @description A single order item&#39;s buyer information.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'order_item_id' => 'string',
-        'buyer_customized_info' => '\Swagger\Client\Model\BuyerCustomizedInfoDetail',
-        'gift_wrap_price' => '\Swagger\Client\Model\Money',
-        'gift_wrap_tax' => '\Swagger\Client\Model\Money',
+        'buyer_customized_info' => '\OrdersApi\Model\BuyerCustomizedInfoDetail',
+        'gift_wrap_price' => '\OrdersApi\Model\Money',
+        'gift_wrap_tax' => '\OrdersApi\Model\Money',
         'gift_message_text' => 'string',
         'gift_wrap_level' => 'string'
     ];
@@ -265,7 +265,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Gets buyer_customized_info
      *
-     * @return \Swagger\Client\Model\BuyerCustomizedInfoDetail
+     * @return \OrdersApi\Model\BuyerCustomizedInfoDetail
      */
     public function getBuyerCustomizedInfo()
     {
@@ -275,7 +275,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Sets buyer_customized_info
      *
-     * @param \Swagger\Client\Model\BuyerCustomizedInfoDetail $buyer_customized_info Buyer information for custom orders from the Amazon Custom program.
+     * @param \OrdersApi\Model\BuyerCustomizedInfoDetail $buyer_customized_info Buyer information for custom orders from the Amazon Custom program.
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Gets gift_wrap_price
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getGiftWrapPrice()
     {
@@ -299,7 +299,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Sets gift_wrap_price
      *
-     * @param \Swagger\Client\Model\Money $gift_wrap_price The gift wrap price of the item.
+     * @param \OrdersApi\Model\Money $gift_wrap_price The gift wrap price of the item.
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Gets gift_wrap_tax
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getGiftWrapTax()
     {
@@ -323,7 +323,7 @@ class OrderItemBuyerInfo implements ModelInterface, ArrayAccess
     /**
      * Sets gift_wrap_tax
      *
-     * @param \Swagger\Client\Model\Money $gift_wrap_tax The tax on the gift wrap price.
+     * @param \OrdersApi\Model\Money $gift_wrap_tax The tax on the gift wrap price.
      *
      * @return $this
      */

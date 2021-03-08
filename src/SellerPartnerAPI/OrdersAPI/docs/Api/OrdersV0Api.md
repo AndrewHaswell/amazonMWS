@@ -1,4 +1,4 @@
-# Swagger\Client\OrdersV0Api
+# OrdersApi\OrdersV0Api
 
 All URIs are relative to *https://sellingpartnerapi-na.amazon.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **getOrder**
-> \Swagger\Client\Model\GetOrderResponse getOrder($order_id)
+> \OrdersApi\Model\GetOrderResponse getOrder($order_id)
 
 
 
@@ -24,7 +24,7 @@ Returns the order indicated by the specified order ID.  **Usage Plan:**  | Rate 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrderResponse**](../Model/GetOrderResponse.md)
+[**\OrdersApi\Model\GetOrderResponse**](../Model/GetOrderResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderAddress**
-> \Swagger\Client\Model\GetOrderAddressResponse getOrderAddress($order_id)
+> \OrdersApi\Model\GetOrderAddressResponse getOrderAddress($order_id)
 
 
 
@@ -73,7 +73,7 @@ Returns the shipping address for the order indicated by the specified order ID. 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrderAddressResponse**](../Model/GetOrderAddressResponse.md)
+[**\OrdersApi\Model\GetOrderAddressResponse**](../Model/GetOrderAddressResponse.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderBuyerInfo**
-> \Swagger\Client\Model\GetOrderBuyerInfoResponse getOrderBuyerInfo($order_id)
+> \OrdersApi\Model\GetOrderBuyerInfoResponse getOrderBuyerInfo($order_id)
 
 
 
@@ -122,7 +122,7 @@ Returns buyer information for the order indicated by the specified order ID.  **
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrderBuyerInfoResponse**](../Model/GetOrderBuyerInfoResponse.md)
+[**\OrdersApi\Model\GetOrderBuyerInfoResponse**](../Model/GetOrderBuyerInfoResponse.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderItems**
-> \Swagger\Client\Model\GetOrderItemsResponse getOrderItems($order_id, $next_token)
+> \OrdersApi\Model\GetOrderItemsResponse getOrderItems($order_id, $next_token)
 
 
 
@@ -171,7 +171,7 @@ Returns detailed order item information for the order indicated by the specified
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrderItemsResponse**](../Model/GetOrderItemsResponse.md)
+[**\OrdersApi\Model\GetOrderItemsResponse**](../Model/GetOrderItemsResponse.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderItemsBuyerInfo**
-> \Swagger\Client\Model\GetOrderItemsBuyerInfoResponse getOrderItemsBuyerInfo($order_id, $next_token)
+> \OrdersApi\Model\GetOrderItemsBuyerInfoResponse getOrderItemsBuyerInfo($order_id, $next_token)
 
 
 
@@ -222,7 +222,7 @@ Returns buyer information in the order items of the order indicated by the speci
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse**](../Model/GetOrderItemsBuyerInfoResponse.md)
+[**\OrdersApi\Model\GetOrderItemsBuyerInfoResponse**](../Model/GetOrderItemsBuyerInfoResponse.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrders**
-> \Swagger\Client\Model\GetOrdersResponse getOrders($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids)
+> \OrdersApi\Model\GetOrdersResponse getOrders($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids)
 
 
 
@@ -273,7 +273,7 @@ Returns orders created or updated during the time frame indicated by the specifi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OrdersV0Api(
+$apiInstance = new OrdersApi\Api\OrdersV0Api(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetOrdersResponse**](../Model/GetOrdersResponse.md)
+[**\OrdersApi\Model\GetOrdersResponse**](../Model/GetOrdersResponse.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace OrdersApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use OrdersApi\ApiException;
+use OrdersApi\Configuration;
+use OrdersApi\HeaderSelector;
+use OrdersApi\ObjectSerializer;
 
 /**
  * OrdersV0Api Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class OrdersV0Api
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrderResponse
+     * @return \OrdersApi\Model\GetOrderResponse
      */
     public function getOrder($order_id)
     {
@@ -107,13 +107,13 @@ class OrdersV0Api
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderResponse';
+        $returnType = '\OrdersApi\Model\GetOrderResponse';
         $request = $this->getOrderRequest($order_id);
 
         try {
@@ -165,7 +165,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -197,7 +197,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -205,7 +205,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderResponse',
+                        '\OrdersApi\Model\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class OrdersV0Api
      */
     public function getOrderAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderResponse';
+        $returnType = '\OrdersApi\Model\GetOrderResponse';
         $request = $this->getOrderRequest($order_id);
 
         return $this->client
@@ -405,9 +405,9 @@ class OrdersV0Api
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrderAddressResponse
+     * @return \OrdersApi\Model\GetOrderAddressResponse
      */
     public function getOrderAddress($order_id)
     {
@@ -420,13 +420,13 @@ class OrdersV0Api
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderAddressWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderAddressResponse';
+        $returnType = '\OrdersApi\Model\GetOrderAddressResponse';
         $request = $this->getOrderAddressRequest($order_id);
 
         try {
@@ -478,7 +478,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -486,7 +486,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderAddressResponse',
+                        '\OrdersApi\Model\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class OrdersV0Api
      */
     public function getOrderAddressAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderAddressResponse';
+        $returnType = '\OrdersApi\Model\GetOrderAddressResponse';
         $request = $this->getOrderAddressRequest($order_id);
 
         return $this->client
@@ -718,9 +718,9 @@ class OrdersV0Api
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrderBuyerInfoResponse
+     * @return \OrdersApi\Model\GetOrderBuyerInfoResponse
      */
     public function getOrderBuyerInfo($order_id)
     {
@@ -733,13 +733,13 @@ class OrdersV0Api
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderBuyerInfoWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderBuyerInfoResponse';
+        $returnType = '\OrdersApi\Model\GetOrderBuyerInfoResponse';
         $request = $this->getOrderBuyerInfoRequest($order_id);
 
         try {
@@ -791,7 +791,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -799,7 +799,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -807,7 +807,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -815,7 +815,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -823,7 +823,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -831,7 +831,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -839,7 +839,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -881,7 +881,7 @@ class OrdersV0Api
      */
     public function getOrderBuyerInfoAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderBuyerInfoResponse';
+        $returnType = '\OrdersApi\Model\GetOrderBuyerInfoResponse';
         $request = $this->getOrderBuyerInfoRequest($order_id);
 
         return $this->client
@@ -1032,9 +1032,9 @@ class OrdersV0Api
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrderItemsResponse
+     * @return \OrdersApi\Model\GetOrderItemsResponse
      */
     public function getOrderItems($order_id, $next_token = null)
     {
@@ -1048,13 +1048,13 @@ class OrdersV0Api
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderItemsResponse';
+        $returnType = '\OrdersApi\Model\GetOrderItemsResponse';
         $request = $this->getOrderItemsRequest($order_id, $next_token);
 
         try {
@@ -1106,7 +1106,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1114,7 +1114,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1122,7 +1122,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1130,7 +1130,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1138,7 +1138,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1146,7 +1146,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1154,7 +1154,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsResponse',
+                        '\OrdersApi\Model\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class OrdersV0Api
      */
     public function getOrderItemsAsyncWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderItemsResponse';
+        $returnType = '\OrdersApi\Model\GetOrderItemsResponse';
         $request = $this->getOrderItemsRequest($order_id, $next_token);
 
         return $this->client
@@ -1354,9 +1354,9 @@ class OrdersV0Api
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrderItemsBuyerInfoResponse
+     * @return \OrdersApi\Model\GetOrderItemsBuyerInfoResponse
      */
     public function getOrderItemsBuyerInfo($order_id, $next_token = null)
     {
@@ -1370,13 +1370,13 @@ class OrdersV0Api
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsBuyerInfoWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse';
+        $returnType = '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse';
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
 
         try {
@@ -1428,7 +1428,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1436,7 +1436,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1444,7 +1444,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1460,7 +1460,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1468,7 +1468,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse',
+                        '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1520,7 +1520,7 @@ class OrdersV0Api
      */
     public function getOrderItemsBuyerInfoAsyncWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrderItemsBuyerInfoResponse';
+        $returnType = '\OrdersApi\Model\GetOrderItemsBuyerInfoResponse';
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
 
         return $this->client
@@ -1688,9 +1688,9 @@ class OrdersV0Api
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      * @param  string[] $amazon_order_ids A list of AmazonOrderId values. An AmazonOrderId is an Amazon-defined order identifier, in 3-7-7 format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\GetOrdersResponse
+     * @return \OrdersApi\Model\GetOrdersResponse
      */
     public function getOrders($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
@@ -1716,13 +1716,13 @@ class OrdersV0Api
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      * @param  string[] $amazon_order_ids A list of AmazonOrderId values. An AmazonOrderId is an Amazon-defined order identifier, in 3-7-7 format. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \OrdersApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OrdersApi\Model\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrdersResponse';
+        $returnType = '\OrdersApi\Model\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
 
         try {
@@ -1774,7 +1774,7 @@ class OrdersV0Api
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1782,7 +1782,7 @@ class OrdersV0Api
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1790,7 +1790,7 @@ class OrdersV0Api
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1798,7 +1798,7 @@ class OrdersV0Api
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1806,7 +1806,7 @@ class OrdersV0Api
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1814,7 +1814,7 @@ class OrdersV0Api
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1822,7 +1822,7 @@ class OrdersV0Api
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\GetOrdersResponse',
+                        '\OrdersApi\Model\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1890,7 +1890,7 @@ class OrdersV0Api
      */
     public function getOrdersAsyncWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $next_token = null, $amazon_order_ids = null)
     {
-        $returnType = '\Swagger\Client\Model\GetOrdersResponse';
+        $returnType = '\OrdersApi\Model\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $next_token, $amazon_order_ids);
 
         return $this->client

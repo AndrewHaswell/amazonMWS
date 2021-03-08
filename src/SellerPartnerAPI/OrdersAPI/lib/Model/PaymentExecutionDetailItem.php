@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * PaymentExecutionDetailItem Class Doc Comment
  *
  * @category Class
  * @description Information about a sub-payment method used to pay for a COD order.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class PaymentExecutionDetailItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payment' => '\Swagger\Client\Model\Money',
+        'payment' => '\OrdersApi\Model\Money',
         'payment_method' => 'string'
     ];
 
@@ -220,7 +220,7 @@ class PaymentExecutionDetailItem implements ModelInterface, ArrayAccess
     /**
      * Gets payment
      *
-     * @return \Swagger\Client\Model\Money
+     * @return \OrdersApi\Model\Money
      */
     public function getPayment()
     {
@@ -230,7 +230,7 @@ class PaymentExecutionDetailItem implements ModelInterface, ArrayAccess
     /**
      * Sets payment
      *
-     * @param \Swagger\Client\Model\Money $payment payment
+     * @param \OrdersApi\Model\Money $payment payment
      *
      * @return $this
      */

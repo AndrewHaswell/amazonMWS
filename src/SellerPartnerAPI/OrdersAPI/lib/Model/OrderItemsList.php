@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * OrderItemsList Class Doc Comment
  *
  * @category Class
  * @description The order items list along with the order ID.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'order_items' => '\Swagger\Client\Model\OrderItemList',
+        'order_items' => '\OrdersApi\Model\OrderItemList',
         'next_token' => 'string',
         'amazon_order_id' => 'string'
     ];
@@ -226,7 +226,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
     /**
      * Gets order_items
      *
-     * @return \Swagger\Client\Model\OrderItemList
+     * @return \OrdersApi\Model\OrderItemList
      */
     public function getOrderItems()
     {
@@ -236,7 +236,7 @@ class OrderItemsList implements ModelInterface, ArrayAccess
     /**
      * Sets order_items
      *
-     * @param \Swagger\Client\Model\OrderItemList $order_items order_items
+     * @param \OrdersApi\Model\OrderItemList $order_items order_items
      *
      * @return $this
      */

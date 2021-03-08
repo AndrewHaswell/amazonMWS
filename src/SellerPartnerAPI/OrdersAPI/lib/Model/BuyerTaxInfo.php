@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace OrdersApi\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \OrdersApi\ObjectSerializer;
 
 /**
  * BuyerTaxInfo Class Doc Comment
  *
  * @category Class
  * @description Tax information about the buyer.
- * @package  Swagger\Client
+ * @package  OrdersApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class BuyerTaxInfo implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'company_legal_name' => 'string',
         'taxing_region' => 'string',
-        'tax_classifications' => '\Swagger\Client\Model\TaxClassification[]'
+        'tax_classifications' => '\OrdersApi\Model\TaxClassification[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class BuyerTaxInfo implements ModelInterface, ArrayAccess
     /**
      * Gets tax_classifications
      *
-     * @return \Swagger\Client\Model\TaxClassification[]
+     * @return \OrdersApi\Model\TaxClassification[]
      */
     public function getTaxClassifications()
     {
@@ -278,7 +278,7 @@ class BuyerTaxInfo implements ModelInterface, ArrayAccess
     /**
      * Sets tax_classifications
      *
-     * @param \Swagger\Client\Model\TaxClassification[] $tax_classifications A list of tax classifications that apply to the order.
+     * @param \OrdersApi\Model\TaxClassification[] $tax_classifications A list of tax classifications that apply to the order.
      *
      * @return $this
      */
